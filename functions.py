@@ -1,3 +1,6 @@
+import matplotlib.pyplot as plt
+import japanize_matplotlib
+
 def show_graph(history,title):
   fig, ax1 = plt.subplots(figsize=(7, 4))
   ax1.plot(history["train_loss"], label="train_loss", color="tab:blue")
