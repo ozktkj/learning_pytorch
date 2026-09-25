@@ -1,6 +1,17 @@
 # learning_pytorch
 PyTorch学習用リポジトリ
 
+## GoogleColabと連携
+GitHubに置いたファイルから関数を読み取る
+```bash
+!wget https://raw.githubusercontent.com/ozktkj/learning_pytorch/refs/heads/main/functions.py
+```
+```python
+import functions
+
+functions.show_graph(plt,history,"グラフタイトル")
+``
+
 ## データセットを自分で作る
 
 ### 課題
