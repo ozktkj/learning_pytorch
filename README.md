@@ -10,7 +10,7 @@ GitHubに置いたファイルから関数を読み取る
 import functions
 
 functions.show_graph(plt,history,"グラフタイトル")
-``
+```
 
 ## データセットを自分で作る
 
