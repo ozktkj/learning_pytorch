@@ -1,0 +1,10 @@
+def show_graph(history,title):
+  fig, ax1 = plt.subplots(figsize=(7, 4))
+  ax1.plot(history["train_loss"], label="train_loss", color="tab:blue")
+  ax1.plot(history["val_loss"],   label="val_loss",   color="tab:orange")
+  ax1.set_xlabel("epoch"); ax1.set_ylabel("loss"); ax1.legend(loc="upper left")
+  ax2 = ax1.twinx()
+  ax2.plot(history["val_acc"], label="val_acc", color="tab:green", linestyle="--")
+  ax2.set_ylabel("accuracy"); ax2.legend(loc="upper right")
+  plt.title(title)
+  plt.show()
